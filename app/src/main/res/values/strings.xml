@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AI Agent</string>
+    <string name="accessibility_service_label">AI Agent Accessibility</string>
+    <string name="accessibility_service_description">อนุญาตให้ AI Agent มองเห็นและควบคุมหน้าจอเพื่อช่วยทำงานอัตโนมัติ</string>
+</resources>

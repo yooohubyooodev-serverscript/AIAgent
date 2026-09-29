@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI AGENT — ตั้งค่าระบบ"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="24dp" />
+
+        <!-- Internet -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/status_internet"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:text="✓"
+                android:textColor="#4CAF50"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Internet"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- GitHub -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/status_github"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:text="✓"
+                android:textColor="#4CAF50"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="GitHub"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Accessibility -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/status_accessibility"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:text="○"
+                android:textColor="#FF9800"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Accessibility"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/btn_accessibility"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="เปิดการตั้งค่า"
+                android:textSize="12sp"
+                android:backgroundTint="#2196F3" />
+        </LinearLayout>
+
+        <!-- Overlay -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/status_overlay"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:text="○"
+                android:textColor="#FF9800"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="แสดงทับแอปอื่น"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/btn_overlay"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="เปิดการตั้งค่า"
+                android:textSize="12sp"
+                android:backgroundTint="#2196F3" />
+        </LinearLayout>
+
+        <!-- MediaProjection / Screen Capture -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/status_screen"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:text="○"
+                android:textColor="#FF9800"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="บันทึกหน้าจอ"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/btn_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="อนุญาต"
+                android:textSize="12sp"
+                android:backgroundTint="#2196F3" />
+        </LinearLayout>
+
+        <!-- Background -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/status_background"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:text="○"
+                android:textColor="#FF9800"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="การทำงานเบื้องหลัง"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/btn_background"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="ตั้งค่า"
+                android:textSize="12sp"
+                android:backgroundTint="#2196F3" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#333333"
+            android:layout_marginVertical="20dp" />
+
+        <TextView
+            android:id="@+id/txt_ready"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="○ ระบบยังไม่พร้อม"
+            android:textColor="#FF9800"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="ตรวจสอบอีกครั้ง"
+            android:textSize="16sp"
+            android:backgroundTint="#607D8B"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="เริ่มทำงาน"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#4CAF50"
+            android:enabled="false" />
+
+    </LinearLayout>
+</ScrollView>
